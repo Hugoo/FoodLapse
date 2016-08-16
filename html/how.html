@@ -1,0 +1,41 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>FoodLapse Beta</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.gielve.com/img/favicon.ico" />
+                <style type="text/css">
+                  * { margin: 0; padding: 0; border: 0; }
+                  body { background: #F5F5F5; color: #48494A; border-top: 4px solid #868A97; font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;}
+                  body a { text-decoration: none; color: #5C9FC0;}
+                  body a:hover { text-decoration: underline; }
+            
+                  #middle { background: #fff; width: 540px; margin: 100px auto; clear: both; padding: 32px 40px; font-weight: 300; font-size: 25px; line-height: 30px; -webkit-box-shadow: 0 1px 2px #ccc; -moz-box-shadow: 0 1px 2px #ccc; box-shadow: 0 1px 2px #ccc; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; color: #666; }
+                  #middle a { color: #AEB7D4; }
+                  #middle p { padding-bottom: 14px; }
+                 
+                  div.footer { margin: 20px auto; clear: both; display: block; width: 880px; letter-spacing:1px; list-style-type: none; border-top: 1px solid #fff; -webkit-box-shadow: 0 -1px 0 #ddd; -moz-box-shadow: 0 -1px 0 #ddd; box-shadow: 0 -1px 0 #ddd; padding: 20px 0; text-align: center; }
+                  div.footer  a, div.footer span { margin: 0 auto; font-size: 9px; color:#48494A;}
+
+                  #ctr img {
+					    display: block;
+					    margin-left: auto;
+					    margin-right: auto;
+					}
+                </style>
+	</head>
+	<body>
+		
+		<div id="middle">
+		<p>A RPi 3 is running a Python script using <a href="http://opencv.org/">opencv</a> to analyse the <a href="http://foodcam.media.mit.edu">foodcam</a> video flow 24/7. When it sees something moving, it saves a picture.<br/>
+		<div id="ctr"><img src="food.gif" height="150px" alt=gif></div><br/>
+		Everyday at 11:59pm (+ process time), the RPi runs <a href="https://libav.org/avconv.html">avconv</a> to generate a <a href="http://techedemic.com/2014/09/18/creating-a-timelapse-clip-with-avconv/">video timelapse</a> with all the pictures taken during the day.</p>
+		</div>
+		
+		<div class="footer">
+      		<span>hmasclet@media - Page inspired by <a href="http://t.co/">t.co</a></span>
+    	</div>
+		
+
+	</body>
+</html>
